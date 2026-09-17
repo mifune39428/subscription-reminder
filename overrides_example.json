@@ -1,0 +1,23 @@
+{
+  "_note": "使うときは overrides.json という名前でコピーしてください。subscriptions = 自動検出の手直し、manual = 請求メールが来ない契約を手で足す欄。",
+  "subscriptions": {
+    "example.com": {
+      "name": "サービス名を直したいとき",
+      "ignore": false,
+      "cancel_url": "https://example.com/account",
+      "web_domains": ["example.com"],
+      "apps": []
+    }
+  },
+  "manual": {
+    "amazon-prime": {
+      "name": "Amazon プライム",
+      "amount": 5900,
+      "cycle_days": 365,
+      "next_renewal": "",
+      "web_domains": ["amazon.co.jp"],
+      "apps": ["Prime Video", "Amazon Kindle"],
+      "cancel_url": "https://www.amazon.co.jp/gp/primecentral"
+    }
+  }
+}
