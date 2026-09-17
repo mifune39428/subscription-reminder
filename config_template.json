@@ -1,0 +1,33 @@
+{
+  "email": {
+    "sender_email": "",
+    "sender_password": "",
+    "receiver_email": "",
+    "imap_server": "imap.gmail.com",
+    "mailbox": "auto",
+    "scan_days": 400,
+    "max_fetch_per_run": 700
+  },
+  "chrome": {
+    "enabled": true,
+    "user_data_dir": "~/Library/Application Support/Google/Chrome",
+    "profiles": [],
+    "lookback_days": 120
+  },
+  "apps": {
+    "enabled": true,
+    "app_dirs": ["/Applications", "~/Applications"]
+  },
+  "web_usage": {
+    "enabled": false
+  },
+  "judgement": {
+    "unused_days": 60,
+    "min_charges_for_cycle": 2
+  },
+  "notify": {
+    "days_before_renewal": 5,
+    "always_send_weekday": null,
+    "macos_notification": true
+  }
+}

@@ -1,0 +1,14 @@
+# 個人の設定と実データは絶対にコミットしない
+config.json
+overrides.json
+mail_cache.json
+last_sent.json
+usage_web.json
+report_preview.html
+watch.lock
+launchd_stdout.log
+launchd_stderr.log
+*.tmp
+__pycache__/
+*.pyc
+.DS_Store

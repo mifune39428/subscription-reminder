@@ -1,0 +1,507 @@
+{
+  "_note": "請求メールの送信元ドメイン → サービス名 / 利用状況の測り方 の対応表。ここに無いドメインもレポートには出る（ドメイン名のまま）ので、出てきたら追記する。",
+  "services": [
+    {
+      "name": "Apple (App Store / iCloud)",
+      "mail_domains": [
+        "apple.com",
+        "email.apple.com",
+        "itunes.com"
+      ],
+      "web_domains": [
+        "icloud.com",
+        "apps.apple.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://apps.apple.com/account/subscriptions"
+    },
+    {
+      "name": "Google (One / YouTube / Workspace)",
+      "mail_domains": [
+        "google.com",
+        "payments.google.com",
+        "youtube.com"
+      ],
+      "web_domains": [
+        "one.google.com",
+        "youtube.com",
+        "drive.google.com"
+      ],
+      "apps": [
+        "Google Drive"
+      ],
+      "cancel_url": "https://play.google.com/store/account/subscriptions"
+    },
+    {
+      "name": "Amazon.co.jp",
+      "mail_domains": [
+        "amazon.co.jp",
+        "amazon.com",
+        "marketplace.amazon.co.jp"
+      ],
+      "web_domains": [
+        "amazon.co.jp",
+        "read.amazon.co.jp"
+      ],
+      "apps": [
+        "Amazon Kindle",
+        "Prime Video"
+      ],
+      "cancel_url": "https://www.amazon.co.jp/gp/primecentral"
+    },
+    {
+      "name": "Adobe",
+      "mail_domains": [
+        "adobe.com",
+        "mail.adobe.com"
+      ],
+      "web_domains": [
+        "adobe.com",
+        "creativecloud.adobe.com"
+      ],
+      "apps": [
+        "Adobe Creative Cloud",
+        "Adobe XD"
+      ],
+      "cancel_url": "https://account.adobe.com/plans"
+    },
+    {
+      "name": "Claude Pro / Claude Code (Anthropic)",
+      "mail_domains": [
+        "anthropic.com",
+        "claude.ai"
+      ],
+      "web_domains": [
+        "claude.ai",
+        "console.anthropic.com"
+      ],
+      "apps": [
+        "Claude"
+      ],
+      "cancel_url": "https://claude.ai/settings/billing"
+    },
+    {
+      "name": "OpenAI (ChatGPT)",
+      "mail_domains": [
+        "openai.com",
+        "tm.openai.com"
+      ],
+      "web_domains": [
+        "chatgpt.com",
+        "chat.openai.com",
+        "platform.openai.com"
+      ],
+      "apps": [
+        "ChatGPT"
+      ],
+      "cancel_url": "https://chatgpt.com/#settings/Subscription"
+    },
+    {
+      "name": "Google Gemini",
+      "mail_domains": [
+        "gemini.google.com"
+      ],
+      "web_domains": [
+        "gemini.google.com",
+        "aistudio.google.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://one.google.com/plans"
+    },
+    {
+      "name": "Canva",
+      "mail_domains": [
+        "canva.com"
+      ],
+      "web_domains": [
+        "canva.com"
+      ],
+      "apps": [
+        "Canva"
+      ],
+      "cancel_url": "https://www.canva.com/settings/billing-and-plans"
+    },
+    {
+      "name": "Figma",
+      "mail_domains": [
+        "figma.com"
+      ],
+      "web_domains": [
+        "figma.com"
+      ],
+      "apps": [
+        "Figma"
+      ],
+      "cancel_url": "https://www.figma.com/settings"
+    },
+    {
+      "name": "Notion",
+      "mail_domains": [
+        "notion.so",
+        "makenotion.com"
+      ],
+      "web_domains": [
+        "notion.so"
+      ],
+      "apps": [
+        "Notion"
+      ],
+      "cancel_url": "https://www.notion.so/my-account"
+    },
+    {
+      "name": "Dropbox",
+      "mail_domains": [
+        "dropbox.com"
+      ],
+      "web_domains": [
+        "dropbox.com"
+      ],
+      "apps": [
+        "Dropbox"
+      ],
+      "cancel_url": "https://www.dropbox.com/account/plan"
+    },
+    {
+      "name": "DeepL",
+      "mail_domains": [
+        "deepl.com"
+      ],
+      "web_domains": [
+        "deepl.com"
+      ],
+      "apps": [
+        "DeepL"
+      ],
+      "cancel_url": "https://www.deepl.com/account/plan"
+    },
+    {
+      "name": "Netflix",
+      "mail_domains": [
+        "netflix.com",
+        "mailer.netflix.com"
+      ],
+      "web_domains": [
+        "netflix.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://www.netflix.com/cancelplan"
+    },
+    {
+      "name": "Spotify",
+      "mail_domains": [
+        "spotify.com"
+      ],
+      "web_domains": [
+        "spotify.com",
+        "open.spotify.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://www.spotify.com/account/subscription/"
+    },
+    {
+      "name": "Microsoft 365",
+      "mail_domains": [
+        "microsoft.com",
+        "email.microsoft.com"
+      ],
+      "web_domains": [
+        "office.com",
+        "microsoft365.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://account.microsoft.com/services"
+    },
+    {
+      "name": "GitHub",
+      "mail_domains": [
+        "github.com"
+      ],
+      "web_domains": [
+        "github.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://github.com/settings/billing"
+    },
+    {
+      "name": "Substack",
+      "mail_domains": [
+        "substack.com"
+      ],
+      "web_domains": [
+        "substack.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://substack.com/settings"
+    },
+    {
+      "name": "note",
+      "mail_domains": [
+        "note.com",
+        "note.mu"
+      ],
+      "web_domains": [
+        "note.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://note.com/settings/membership"
+    },
+    {
+      "name": "Day One",
+      "mail_domains": [
+        "dayoneapp.com",
+        "bloombuilt.com"
+      ],
+      "web_domains": [
+        "dayoneapp.com"
+      ],
+      "apps": [
+        "Day One"
+      ],
+      "cancel_url": "https://dayoneapp.com/account"
+    },
+    {
+      "name": "Obsidian",
+      "mail_domains": [
+        "obsidian.md"
+      ],
+      "web_domains": [
+        "obsidian.md"
+      ],
+      "apps": [
+        "Obsidian"
+      ],
+      "cancel_url": "https://obsidian.md/account"
+    },
+    {
+      "name": "Discord",
+      "mail_domains": [
+        "discord.com",
+        "discordapp.com"
+      ],
+      "web_domains": [
+        "discord.com"
+      ],
+      "apps": [
+        "Discord"
+      ],
+      "cancel_url": "https://discord.com/channels/@me"
+    },
+    {
+      "name": "Gyazo",
+      "mail_domains": [
+        "gyazo.com",
+        "nota.inc"
+      ],
+      "web_domains": [
+        "gyazo.com"
+      ],
+      "apps": [
+        "Gyazo",
+        "Gyazo GIF"
+      ],
+      "cancel_url": "https://gyazo.com/settings"
+    },
+    {
+      "name": "Zoom",
+      "mail_domains": [
+        "zoom.us",
+        "zoom.com"
+      ],
+      "web_domains": [
+        "zoom.us"
+      ],
+      "apps": [
+        "zoom.us"
+      ],
+      "cancel_url": "https://zoom.us/billing"
+    },
+    {
+      "name": "Alfred",
+      "mail_domains": [
+        "alfredapp.com"
+      ],
+      "web_domains": [
+        "alfredapp.com"
+      ],
+      "apps": [
+        "Alfred 5"
+      ],
+      "cancel_url": "https://www.alfredapp.com/"
+    },
+    {
+      "name": "BetterTouchTool",
+      "mail_domains": [
+        "folivora.ai"
+      ],
+      "web_domains": [
+        "folivora.ai"
+      ],
+      "apps": [
+        "BetterTouchTool"
+      ],
+      "cancel_url": "https://folivora.ai/"
+    },
+    {
+      "name": "Pixelmator",
+      "mail_domains": [
+        "pixelmator.com"
+      ],
+      "web_domains": [
+        "pixelmator.com"
+      ],
+      "apps": [
+        "Pixelmator Pro"
+      ],
+      "cancel_url": "https://www.pixelmator.com/"
+    },
+    {
+      "name": "WordPress.com / Jetpack",
+      "mail_domains": [
+        "wordpress.com",
+        "automattic.com",
+        "jetpack.com"
+      ],
+      "web_domains": [
+        "wordpress.com",
+        "jetpack.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://wordpress.com/me/purchases"
+    },
+    {
+      "name": "Avast",
+      "mail_domains": [
+        "avast.com",
+        "norton.com",
+        "gendigital.com"
+      ],
+      "web_domains": [
+        "avast.com"
+      ],
+      "apps": [
+        "Avast"
+      ],
+      "cancel_url": "https://id.avast.com/"
+    },
+    {
+      "name": "Vrew",
+      "mail_domains": [
+        "vrew.ai",
+        "voyagerx.com"
+      ],
+      "web_domains": [
+        "vrew.ai"
+      ],
+      "apps": [
+        "Vrew"
+      ],
+      "cancel_url": "https://vrew.voyagerx.com/"
+    },
+    {
+      "name": "Chatwork",
+      "mail_domains": [
+        "chatwork.com"
+      ],
+      "web_domains": [
+        "chatwork.com"
+      ],
+      "apps": [
+        "Chatwork"
+      ],
+      "cancel_url": "https://www.chatwork.com/"
+    },
+    {
+      "name": "Groq",
+      "mail_domains": [
+        "groq.com"
+      ],
+      "web_domains": [
+        "groq.com",
+        "console.groq.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://console.groq.com/settings/billing"
+    },
+    {
+      "name": "Brain / ココナラ等",
+      "mail_domains": [
+        "brain-market.com"
+      ],
+      "web_domains": [
+        "brain-market.com"
+      ],
+      "apps": [],
+      "cancel_url": ""
+    },
+    {
+      "name": "Voicy プレミアムリスナー",
+      "mail_domains": [
+        "voicy.jp"
+      ],
+      "web_domains": [
+        "voicy.jp"
+      ],
+      "apps": [],
+      "cancel_url": "https://voicy.jp/mypage/premium"
+    },
+    {
+      "name": "エックスサーバー",
+      "mail_domains": [
+        "xserver.ne.jp",
+        "xserver.co.jp",
+        "xserver.jp"
+      ],
+      "web_domains": [
+        "xserver.ne.jp"
+      ],
+      "apps": [],
+      "cancel_url": "https://secure.xserver.ne.jp/xapanel/login/xserver/"
+    },
+    {
+      "name": "Xserverドメイン",
+      "mail_domains": [
+        "xdomain.ne.jp"
+      ],
+      "web_domains": [
+        "xdomain.ne.jp",
+        "domain.xserver.ne.jp"
+      ],
+      "apps": [],
+      "cancel_url": "https://secure.xserver.ne.jp/xapanel/login/xdomain/"
+    },
+    {
+      "name": "ネットオウル / スタードメイン",
+      "mail_domains": [
+        "netowl.jp"
+      ],
+      "web_domains": [
+        "netowl.jp",
+        "star-domain.jp"
+      ],
+      "apps": [],
+      "cancel_url": "https://secure.netowl.jp/"
+    },
+    {
+      "name": "お名前.com",
+      "mail_domains": [
+        "onamae.com"
+      ],
+      "web_domains": [
+        "onamae.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://navi.onamae.com/"
+    },
+    {
+      "name": "ムームードメイン",
+      "mail_domains": [
+        "muumuu-domain.com"
+      ],
+      "web_domains": [
+        "muumuu-domain.com"
+      ],
+      "apps": [],
+      "cancel_url": "https://muumuu-domain.com/"
+    }
+  ]
+}
